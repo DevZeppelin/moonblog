@@ -135,7 +135,7 @@ export default function Layout({ children }) {
           </Link>
         </div>
 
-        <div className="flex space-x-5 md:space-x-10 mt-10 max-w-3xl text-2xl md:text-4xl">
+        <div className="flex space-x-5 md:space-x-10 mt-10 max-w-3xl text-2xl md:text-4xl justify-center">
           
           <Link href="https://api.whatsapp.com/send?phone=5492616708100" target="_blank">
             
