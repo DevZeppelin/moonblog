@@ -6,11 +6,11 @@ export default function BlogLayout ({tag, title, blogs, newss}) {
     <div>             
         <div className="flex">
           <div className="flex flex-col md:w-2/3 ml-4 md:ml-24 mr-4 md:mr-20 text-center">
-        <h1 className="text-3xl text-center my-8 mb-16">Moonwatcher's {title}</h1>
+        <h1 className=" text-2xl font-bold md:text-3xl text-center my-8 mb-16">Moonwatcher's {title}</h1>
             {blogs.results.map((article, index) => (
-              <div className="mb-10" key={article.uid}>
+              <div className=" mb-4 md:mb-10" key={article.uid}>
                 <Link href={`${tag}/${article.uid}`}>
-                  <h1 className="bold text-3xl text-blue-500 cursor-pointer mb-4">
+                  <h1 className="bold text-xl md:text-3xl text-blue-500 cursor-pointer mb-4">
                     {RichText.render(article.data["blog-title"])}
                   </h1>
                 </Link>

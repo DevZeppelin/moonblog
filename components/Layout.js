@@ -44,42 +44,42 @@ export default function Layout({ children }) {
         </div>
       </div>
       <div
-        className="absolute z-20 bg-black text-white w-full"
+        className="absolute z-20 right-0 bg-black text-white w-1/2"
         style={{ display: open ? "block" : "none" }}
       >
-        <div className="flex flex-col text-base p-4 text-mywhite divide-y">
+        <div className="flex text-right flex-col text-base p-2 text-white divide-y mb-5">
           <Link href="/">
-            <a className="mr-10  mt-5 px-5 border-b-2 border-transparent hover:border-black">
+            <a className="mr-2  mt-2 px-5 border-b-2 border-transparent hover:border-black">
               Home
             </a>
           </Link>
           <Link href="/article">
-            <a className="mr-10 mt-5 px-5 border-b-2 border-transparent hover:border-black">
+            <a className="mr-2 mt-5 px-5 border-b-2 border-transparent hover:border-black">
               Blog
             </a>
           </Link>
           <Link href="/news">
-            <a className="mr-10 mt-5 px-5 border-b-2 border-transparent hover:border-black">
+            <a className="mr-2 mt-5 px-5 border-b-2 border-transparent hover:border-black">
               News
             </a>
           </Link>
           <Link href="/dev">
-            <a className="mr-10 mt-5 px-5 border-b-2 border-transparent hover:border-black">
+            <a className="mr-2 mt-5 px-5 border-b-2 border-transparent hover:border-black">
               Dev
             </a>
           </Link>
           <Link href="/cripto">
-            <a className="mr-10 mt-5 px-5 border-b-2 border-transparent hover:border-black">
+            <a className="mr-2 mt-5 px-5 border-b-2 border-transparent hover:border-black">
               Cripto
             </a>
           </Link>
           <Link href="/politica">
-            <a className="mr-10 mt-5 px-5 border-b-2 border-transparent hover:border-black">
+            <a className="mr-2 mt-5 px-5 border-b-2 border-transparent hover:border-black">
               Política
             </a>
           </Link>
           <Link href="/escritos">
-            <a className="mr-10 mt-5 px-5 border-b-2 border-transparent hover:border-black">
+            <a className="mr-2 mt-5 px-5 border-b-2 border-transparent hover:border-black">
               Escritos
             </a>
           </Link>
@@ -135,7 +135,7 @@ export default function Layout({ children }) {
           </Link>
         </div>
 
-        <div className="flex space-x-5 md:space-x-10 mt-10 max-w-3xl text-4xl">
+        <div className="flex space-x-5 md:space-x-10 mt-10 max-w-3xl text-2xl md:text-4xl">
           
           <Link href="https://api.whatsapp.com/send?phone=5492616708100" target="_blank">
             
