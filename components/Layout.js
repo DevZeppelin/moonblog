@@ -129,7 +129,7 @@ export default function Layout({ children }) {
       <div className="bg-black text-white text-xl py-10 px-6 md:px-24 flex flex-col">
         <div>
           <Link href="/">
-            <a className="text-white text-lg md:text-2xl flex align-baseline px-10 my-auto hover:text-blue-700">
+            <a className="text-white text-lg md:text-2xl flex justify-start px-10 my-auto hover:text-blue-700">
               <GiMonkey className="inline text-4xl mr-4 " /> moonwatcher.dev
             </a>
           </Link>

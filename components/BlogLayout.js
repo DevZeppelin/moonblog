@@ -1,7 +1,7 @@
 import { RichText } from "prismic-reactjs";
 import Link from "next/link";
 
-export default function BlogLayout ({tag, title, blogs, newss}) {
+export default function BlogLayout ({tag, title, blogs, secundary}) {
   return (
     <div>             
         <div className="flex">
@@ -10,7 +10,7 @@ export default function BlogLayout ({tag, title, blogs, newss}) {
             {blogs.results.map((article, index) => (
               <div className=" mb-4 md:mb-10" key={article.uid}>
                 <Link href={`${tag}/${article.uid}`}>
-                  <h1 className="bold text-xl md:text-3xl text-blue-500 cursor-pointer mb-4">
+                  <h1 className="bold uppercase text-xl md:text-2xl text-blue-500 cursor-pointer mb-4">
                     {RichText.render(article.data["blog-title"])}
                   </h1>
                 </Link>
@@ -33,14 +33,15 @@ export default function BlogLayout ({tag, title, blogs, newss}) {
           </div>
           <div className="hidden md:flex flex-col w-1/3">
             <h1 className="text-xl uppercase font-bold opacity-50 my-10 ml-24">
-              Noticias
+              Títulos
             </h1>
 
-            {newss.results.map((article, index) => (
+            {blogs.results.map((article, index) => (
+              
               <div key={article.uid}>
-                <Link href={`news/${article.uid}`}>
-                  <h1 className="bold text-base mr-10 text-blue-500 cursor-pointer">
-                    {RichText.render(article.data["news-title"])}
+                <Link href={`${article.tags[0]}/${article.uid}`}>
+                  <h1 className="flex bold text-base mr-10 text-blue-500 cursor-pointer">
+                  {RichText.render(article.data["blog-title"])}
                   </h1>
                 </Link>
 

@@ -4,7 +4,7 @@ import Prismic from "prismic-javascript";
 import { Client } from "../prismic-configuration";
 import BlogLayout from "../components/BlogLayout";
 
-export default function Dev({blogs, newss}) {
+export default function Dev({blogs}) {
   return (
     <div>
       <Head>
@@ -12,7 +12,7 @@ export default function Dev({blogs, newss}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-          <BlogLayout tag="dev" title="Dev" blogs={blogs} newss={newss} />          
+          <BlogLayout tag="dev" title="Dev" blogs={blogs} />          
       </Layout>
     </div>
   );
@@ -21,16 +21,11 @@ export default function Dev({blogs, newss}) {
 export async function getServerSideProps() {
     const blogs = await Client().query(
       Prismic.Predicates.at("document.tags", ["dev"])
-    );
-  
-    const newss = await Client().query(
-      Prismic.Predicates.at("document.type", "news")
-    );
+    );  
     
     return {
       props: {
-        blogs: blogs,
-        newss: newss,     
+        blogs: blogs     
       },
     };
   }

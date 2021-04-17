@@ -4,7 +4,7 @@ import Prismic from "prismic-javascript";
 import { Client } from "../prismic-configuration";
 import BlogLayout from "../components/BlogLayout";
 
-export default function Cripto({blogs, newss}) {
+export default function Cripto({blogs}) {
   return (
     <div>
       <Head>
@@ -12,7 +12,7 @@ export default function Cripto({blogs, newss}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-          <BlogLayout tag="cripto" title="Cripto" blogs={blogs} newss={newss} />          
+          <BlogLayout tag="cripto" title="Cripto" blogs={blogs} />          
       </Layout>
     </div>
   );
@@ -22,15 +22,10 @@ export async function getServerSideProps() {
     const blogs = await Client().query(
       Prismic.Predicates.at("document.tags", ["cripto"])
     );
-  
-    const newss = await Client().query(
-      Prismic.Predicates.at("document.type", "news")
-    );
-    
+      
     return {
       props: {
-        blogs: blogs,
-        newss: newss,     
+        blogs: blogs,       
       },
     };
   }
