@@ -139,37 +139,37 @@ export default function Layout({ children }) {
           
           <Link href="https://api.whatsapp.com/send?phone=5492616708100" target="_blank">
             
-          <a target="_blank">
+          <a target="_blank" rel="noopener">
             <FaWhatsapp className="hover:text-green-600" />
             </a>
           </Link>
 
           <Link href="https://www.instagram.com/moonwatcher.dev/" >
-            <a target="_blank">
+            <a target="_blank" rel="noopener">
               <FaInstagram className="hover:text-indigo-500" />
             </a>
           </Link>
 
           <Link href="https://www.facebook.com/Gini77o">
-          <a target="_blank"> 
+          <a target="_blank" rel="noopener"> 
             <FaFacebook className="hover:text-blue-600" />
             </a>
           </Link>
 
           <Link href="https://www.linkedin.com/in/gino-pietrobon">
-          <a target="_blank">
+          <a target="_blank" rel="noopener">
             <FaLinkedinIn className="hover:text-yellow-400" />
             </a>
           </Link>
 
           <Link href="https://github.com/DevZeppelin">
-          <a target="_blank"> 
+          <a target="_blank" rel="noopener"> 
             <FaGithub className="hover:text-red-400" />
             </a>
           </Link>
 
           <Link href="mailto:gino.b.pietrobon@gmail.com">
-           <a target="_blank"> 
+           <a target="_blank" rel="noopener"> 
             <FiMail className="hover:text-red-700" />
             </a>
           </Link>
