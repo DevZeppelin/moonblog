@@ -26,7 +26,7 @@ export default function Home({ blogs }) {
             ¡Bienvenidos a mi sitio!
           </h1>
         </div>
-        <div className="flex mb-12 flex-wrap-reverse mx-auto">
+        <div className="flex mb-12 flex-wrap-reverse md:flex-wrap mx-auto my-auto">
           <div className="flex flex-col w-4/5 md:w-1/2 my-10 ml-8 md:ml-24  mt-8">
             <div className="space-y-4">
               <p>
@@ -48,22 +48,16 @@ export default function Home({ blogs }) {
               <p>
                 En el footer tenés mi{" "}
                 <Link href="/contacto">
-                  <span className="text-secundary cursor-pointer font-bold">
+                  <span className="text-primary cursor-pointer font-bold">
                     Contacto
                   </span>
                 </Link>
               </p>
-              <p className="text-center">
-                <Link href="/article">
-                  <button className=" bg-secundary text-white cursor-pointer font-bold p-4 border-gray-800 border-2  mt-10 rounded-sm">
-                    ¡Ir al blog!
-                  </button>
-                </Link>
-              </p>
+              
             </div>
           </div>
-          <div className="w-full md:w-1/3 flex justify-center">
-            <img src="logo.webp" alt="img" />
+          <div className="md:w-1/3 flex flex-auto items-center justify-center align-middle max-h-72 max-w-72 mr-6 ">
+            <img className="flex my-auto" src="logo.webp" alt="img" width="300" height="300" />
           </div>
         </div>
       </Layout>

@@ -88,37 +88,37 @@ export default function Layout({ children }) {
 
       <div className="hidden md:flex px-2 md:px-24 bg-white border-b border-black text-base">
         <Link href="/">
-          <a className="mr-10  mt-5 px-5 border-b-2 border-transparent hover:border-black">
+          <a className="mr-10  mt-5 px-3 border-b-2 border-transparent hover:border-black">
             Home
           </a>
         </Link>
         <Link href="/news">
-          <a className="mr-10 mt-5 px-5 border-b-2 border-transparent hover:border-black">
+          <a className="mr-10 mt-5 px-3 border-b-2 border-transparent hover:border-black">
             Noticias
           </a>
         </Link>
         <Link href="/article">
-          <a className="mr-10 mt-5 px-5 border-b-2 border-transparent hover:border-black">
+          <a className="mr-10 mt-5 px-3 border-b-2 border-transparent hover:border-black">
             Blog
           </a>
         </Link>
         <Link href="/dev">
-          <a className="mr-10 mt-5 px-5 border-b-2 border-transparent hover:border-black">
+          <a className="mr-10 mt-5 px-3 border-b-2 border-transparent hover:border-black">
             Dev
           </a>
         </Link>
         <Link href="/cripto">
-          <a className="mr-10 mt-5 px-5 border-b-2 border-transparent hover:border-black">
+          <a className="mr-10 mt-5 px-3 border-b-2 border-transparent hover:border-black">
             Cripto
           </a>
         </Link>
         <Link href="/politica">
-          <a className="mr-10 mt-5 px-5 border-b-2 border-transparent hover:border-black">
+          <a className="mr-10 mt-5 px-3 border-b-2 border-transparent hover:border-black">
             Política
           </a>
         </Link>
         <Link href="/escritos">
-          <a className="mr-10 mt-5 px-5 border-b-2 border-transparent hover:border-black">
+          <a className="mr-10 mt-5 px-3 border-b-2 border-transparent hover:border-black">
             Escritos
           </a>
         </Link>
@@ -139,38 +139,38 @@ export default function Layout({ children }) {
           
           <Link href="https://api.whatsapp.com/send?phone=5492616708100" target="_blank">
             
-          <a target="_blank" rel="noopener">
-            <FaWhatsapp className="hover:text-green-600" />
+          <a target="_blank" rel="noopener" alt="whatsapp-logo">
+            <FaWhatsapp className="hover:text-green-700" />
             </a>
           </Link>
 
           <Link href="https://www.instagram.com/moonwatcher.dev/" >
-            <a target="_blank" rel="noopener">
-              <FaInstagram className="hover:text-indigo-500" />
+            <a target="_blank" rel="noopener" alt="instagram-logo">
+              <FaInstagram className="hover:text-indigo-700" />
             </a>
           </Link>
 
           <Link href="https://www.facebook.com/Gini77o">
-          <a target="_blank" rel="noopener"> 
-            <FaFacebook className="hover:text-blue-600" />
-            </a>
-          </Link>
-
-          <Link href="https://www.linkedin.com/in/gino-pietrobon">
-          <a target="_blank" rel="noopener">
-            <FaLinkedinIn className="hover:text-yellow-400" />
+          <a target="_blank" rel="noopener" alt="facebook-logo"> 
+            <FaFacebook className="hover:text-blue-700" />
             </a>
           </Link>
 
           <Link href="https://github.com/DevZeppelin">
-          <a target="_blank" rel="noopener"> 
-            <FaGithub className="hover:text-red-400" />
+          <a target="_blank" rel="noopener" alt="github-logo"> 
+            <FaGithub className="hover:text-pink-700" />
+            </a>
+          </Link>
+
+          <Link href="https://www.linkedin.com/in/gino-pietrobon">
+          <a target="_blank" rel="noopener" alt="linkedin-logo">
+            <FaLinkedinIn className="hover:text-yellow-400" />
             </a>
           </Link>
 
           <Link href="mailto:gino.b.pietrobon@gmail.com">
-           <a target="_blank" rel="noopener"> 
-            <FiMail className="hover:text-red-700" />
+           <a target="_blank" rel="noopener" alt="gmail-logo"> 
+            <FiMail className="hover:text-red-600" />
             </a>
           </Link>
         </div>
