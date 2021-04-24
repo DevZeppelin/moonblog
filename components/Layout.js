@@ -19,7 +19,7 @@ export default function Layout({ children }) {
     <div>
       <div className="px-2 md:px-24 bg-black text-white flex justify-between h-16">
         <Link href="/">
-          <a className="text-white text-2xl flex align-baseline px-2 md:px-10 my-auto hover:text-blue-500">
+          <a className="text-white text-2xl flex align-baseline px-2 md:px-10 my-auto hover:text-secundary">
             <GiMonkey className="inline text-4xl mr-4" /> moonwatcher.dev
           </a>
         </Link>
@@ -29,12 +29,12 @@ export default function Layout({ children }) {
             type="text"
             className="bg-transparent border-b w-full border-white outline-none"
           />
-          <FiSearch className="ml-8 text-2xl hover:text-blue-500 cursor-pointer" />
+          <FiSearch className="ml-8 text-2xl hover:text-secundary cursor-pointer" />
         </div>
 
         <div className="hidden md:flex items-center text-2xl">
-          <AiOutlineBell className="mr-2 cursor-pointer hover:text-blue-500" />
-          <AiOutlineUser className="mr-2 cursor-pointer hover:text-blue-500" />
+          <AiOutlineBell className="mr-2 cursor-pointer hover:text-secundary" />
+          <AiOutlineUser className="mr-2 cursor-pointer hover:text-secundary" />
         </div>
 
         <div className="p-2 md:p-4 md:hidden flex justify-center w-10 text-2xl">
@@ -53,14 +53,14 @@ export default function Layout({ children }) {
               Home
             </a>
           </Link>
+          <Link href="/news">
+            <a className="mr-2 mt-5 px-5 border-b-2 border-transparent hover:border-black">
+              Noticias
+            </a>
+          </Link>
           <Link href="/article">
             <a className="mr-2 mt-5 px-5 border-b-2 border-transparent hover:border-black">
               Blog
-            </a>
-          </Link>
-          <Link href="/news">
-            <a className="mr-2 mt-5 px-5 border-b-2 border-transparent hover:border-black">
-              News
             </a>
           </Link>
           <Link href="/dev">
@@ -92,14 +92,14 @@ export default function Layout({ children }) {
             Home
           </a>
         </Link>
+        <Link href="/news">
+          <a className="mr-10 mt-5 px-5 border-b-2 border-transparent hover:border-black">
+            Noticias
+          </a>
+        </Link>
         <Link href="/article">
           <a className="mr-10 mt-5 px-5 border-b-2 border-transparent hover:border-black">
             Blog
-          </a>
-        </Link>
-        <Link href="/news">
-          <a className="mr-10 mt-5 px-5 border-b-2 border-transparent hover:border-black">
-            News
           </a>
         </Link>
         <Link href="/dev">
@@ -129,7 +129,7 @@ export default function Layout({ children }) {
       <div className="bg-black text-white text-xl py-10 px-6 md:px-24 flex flex-col">
         <div>
           <Link href="/">
-            <a className="text-white text-lg md:text-2xl flex justify-start px-10 my-auto hover:text-blue-700">
+            <a className="text-white text-lg md:text-2xl flex justify-start px-10 my-auto hover:text-secundary">
               <GiMonkey className="inline text-4xl mr-4 " /> moonwatcher.dev
             </a>
           </Link>

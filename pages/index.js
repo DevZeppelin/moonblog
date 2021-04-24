@@ -2,12 +2,23 @@ import Head from "next/head";
 import Layout from "../components/Layout";
 import Link from "next/link";
 
-export default function Home({ blogs}) {
+
+export default function Home({ blogs }) {
   return (
     <div>
       <Head>
         <title>¡moonwatcher baby!</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta charSet="UTF-8" />
+        <meta
+          name="description"
+          content="Moonwatcher Blog. Artículos, Noticias, Criptomonedas, Escritos, Blog de programación (dev) y Artículos sobre política"
+        />
+        <meta
+          name="keywords"
+          content="dev,crypto,news,programacion,noticias,criptomonedas,politica,articles,articulos,blog,escritos,moonwatcher,blog"
+        />
+        <meta name="author" content="Gino Pietrobon" />
       </Head>
       <Layout>
         <div className="flex">
@@ -37,26 +48,22 @@ export default function Home({ blogs}) {
               <p>
                 En el footer tenés mi{" "}
                 <Link href="/contacto">
-                  <span className="text-blue-700 cursor-pointer font-bold">
+                  <span className="text-secundary cursor-pointer font-bold">
                     Contacto
                   </span>
                 </Link>
               </p>
               <p className="text-center">
-               <Link href="/article">
-                  <button className=" bg-blue-700 text-white cursor-pointer font-bold p-4 border-gray-800 border-2  mt-10 rounded-sm">
+                <Link href="/article">
+                  <button className=" bg-secundary text-white cursor-pointer font-bold p-4 border-gray-800 border-2  mt-10 rounded-sm">
                     ¡Ir al blog!
                   </button>
                 </Link>
-                </p>
+              </p>
             </div>
-            
           </div>
           <div className="w-full md:w-1/3 flex justify-center">
-            <img
-              src="logo.png"
-              alt="img"
-            />
+            <img src="logo.webp" alt="img" />
           </div>
         </div>
       </Layout>

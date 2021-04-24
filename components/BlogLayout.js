@@ -33,7 +33,7 @@ export default function BlogLayout ({tag, title, blogs, secundary}) {
           </div>
           <div className="hidden md:flex flex-col w-1/3">
             <h1 className="text-xl uppercase font-bold opacity-50 my-10 ml-24">
-              Títulos
+              Índice
             </h1>
 
             {blogs.results.map((article, index) => (
