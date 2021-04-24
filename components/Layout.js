@@ -139,39 +139,39 @@ export default function Layout({ children }) {
           
           <Link href="https://api.whatsapp.com/send?phone=5492616708100" target="_blank">
             
-          <a target="_blank" rel="noopener" alt="whatsapp-logo">
+          <button target="_blank" rel="noopener" alt="whatsapp-logo">
             <FaWhatsapp className="hover:text-green-700" />
-            </a>
+            </button>
           </Link>
 
           <Link href="https://www.instagram.com/moonwatcher.dev/" >
-            <a target="_blank" rel="noopener" alt="instagram-logo">
+            <button target="_blank" rel="noopener" alt="instagram-logo">
               <FaInstagram className="hover:text-indigo-700" />
-            </a>
+            </button>
           </Link>
 
           <Link href="https://www.facebook.com/Gini77o">
-          <a target="_blank" rel="noopener" alt="facebook-logo"> 
+          <button target="_blank" rel="noopener" alt="facebook-logo"> 
             <FaFacebook className="hover:text-blue-700" />
-            </a>
+            </button>
           </Link>
 
           <Link href="https://github.com/DevZeppelin">
-          <a target="_blank" rel="noopener" alt="github-logo"> 
+          <button target="_blank" rel="noopener" alt="github-logo"> 
             <FaGithub className="hover:text-pink-700" />
-            </a>
+            </button>
           </Link>
 
           <Link href="https://www.linkedin.com/in/gino-pietrobon">
-          <a target="_blank" rel="noopener" alt="linkedin-logo">
+          <button target="_blank" rel="noopener" alt="linkedin-logo">
             <FaLinkedinIn className="hover:text-yellow-400" />
-            </a>
+            </button>
           </Link>
 
           <Link href="mailto:gino.b.pietrobon@gmail.com">
-           <a target="_blank" rel="noopener" alt="gmail-logo"> 
+           <button target="_blank" rel="noopener" alt="gmail-logo"> 
             <FiMail className="hover:text-red-600" />
-            </a>
+            </button>
           </Link>
         </div>
 
