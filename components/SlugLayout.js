@@ -16,10 +16,10 @@ export default function SlugLayout({ article }) {
       <div className="text-base md:text-lg opacity-75 space-y-2 md:space-y-4">
         {RichText.render(article.data["blog-rich-text"])}
       </div>
-      <Link href={`../${article.tags[0]}`}>
+      <Link href={'/'}>
         <button className="bg-black text-white py-3 px-10 my-4 text-lg uppercase">
           {" "}
-          Back &nbsp; 👈
+          Home &nbsp; 👈
         </button>
       </Link>
     </div>

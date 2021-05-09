@@ -35,11 +35,14 @@ export default function Home({ blogs }) {
                 tecnología.
               </p>
               <p>
-                Te invito a recorrer mi <i>Blog</i> aver si te parece
-                interesante. Leyendo mis <i>Noticias</i> estarás al tanto de lo
-                que ocurre en el mundo tecnológico. También hay una sección
-                exclusiva para <i>programadores</i> y otra en donde se habla de
-                Bitcoin y <i>Criptomonedas</i>.
+                Te invito a recorrer mi <Link href="/article"><i>Blog</i></Link> aver si te parece
+                interesante. Leyendo mis <Link href="/news"><i>Noticias</i></Link> estarás al tanto de lo
+                que ocurre en el mundo tecnológico.
+              </p>
+              <p>
+                También hay una sección
+                exclusiva para <Link href="/dev"><i>programadores</i></Link> y otra en donde se habla de
+                Bitcoin y <Link href="/cripto"><i>Criptomonedas</i></Link>.
               </p>
               <p>
                 Si te das una vuelta, espero tu comentario, opinión, aporte o
