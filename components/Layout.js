@@ -44,43 +44,43 @@ export default function Layout({ children }) {
         </div>
       </div>
       <div
-        className="absolute z-20 right-0 bg-black text-white w-1/2"
+        className="absolute z-20 right-0 bg-black text-white w-2/5 rounded-b-3xl"
         style={{ display: open ? "block" : "none" }}
       >
         <div className="flex text-right flex-col text-base p-2 text-white divide-y mb-5">
           <Link href="/">
             <a className="mr-2  mt-2 px-5 border-b-2 border-transparent hover:border-black">
-              Home
+              Home &#128053;
             </a>
           </Link>
           <Link href="/news">
             <a className="mr-2 mt-5 px-5 border-b-2 border-transparent hover:border-black">
-              Noticias
+              Noticias &#128240;
             </a>
           </Link>
           <Link href="/article">
             <a className="mr-2 mt-5 px-5 border-b-2 border-transparent hover:border-black">
-              Blog
+              Blog &#129497;
             </a>
           </Link>
           <Link href="/dev">
             <a className="mr-2 mt-5 px-5 border-b-2 border-transparent hover:border-black">
-              Dev
+              Dev &#128187;
             </a>
           </Link>
           <Link href="/cripto">
             <a className="mr-2 mt-5 px-5 border-b-2 border-transparent hover:border-black">
-              Cripto
+              Cripto &#128184;
             </a>
           </Link>
           <Link href="/politica">
             <a className="mr-2 mt-5 px-5 border-b-2 border-transparent hover:border-black">
-              Política
+              Política &#128188;
             </a>
           </Link>
           <Link href="/escritos">
             <a className="mr-2 mt-5 px-5 border-b-2 border-transparent hover:border-black">
-              Escritos
+              Escritos &#9997;
             </a>
           </Link>
         </div>

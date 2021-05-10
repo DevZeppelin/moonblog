@@ -23,7 +23,7 @@ export default function Home({ blogs }) {
       <Layout>
         <div className="flex">
           <h1 className=" w-full md:w-2/3 text-center text-2xl uppercase font-bold opacity-50 mt-16 ml-2 md:ml-24">
-            ¡Bienvenidos a mi sitio!
+            ¡Bienvenido a mi sitio!
           </h1>
         </div>
         <div className="flex mb-12 flex-wrap-reverse md:flex-wrap mx-auto my-auto">
@@ -35,14 +35,14 @@ export default function Home({ blogs }) {
                 tecnología.
               </p>
               <p>
-                Te invito a recorrer mi <Link href="/article"><i className="cursor-pointer">Blog</i></Link> aver si te parece
-                interesante. Leyendo mis <Link href="/news"><i className="cursor-pointer">Noticias</i></Link> estarás al tanto de lo
+                Te invito a recorrer mi <Link href="/article"><i className="cursor-pointer font-bold text-blue-700">Blog</i></Link> aver si te parece
+                interesante. Leyendo mis <Link href="/news"><i className="cursor-pointer font-bold text-pink-600">Noticias</i></Link> estarás al tanto de lo
                 que ocurre en el mundo tecnológico.
               </p>
               <p>
                 También hay una sección
-                exclusiva para <Link href="/dev"><i className="cursor-pointer">Programadores</i></Link> y otra en donde se habla de
-                Bitcoin y <Link href="/cripto"><i className="cursor-pointer">Criptomonedas</i></Link>.
+                exclusiva para <Link href="/dev"><i className="cursor-pointer font-bold text-yellow-700">Programadores</i></Link> y otra en donde se habla de
+                Bitcoin y <Link href="/cripto"><i className="cursor-pointer font-bold text-purple-700">Criptomonedas</i></Link>.
               </p>
               <p>
                 Si te das una vuelta, espero tu comentario, opinión, aporte o
@@ -59,8 +59,8 @@ export default function Home({ blogs }) {
               
             </div>
           </div>
-          <div className="md:w-1/3 flex flex-auto items-center justify-center align-middle max-h-72 max-w-72 mr-6 ">
-            <img className="flex my-auto" src="logo.webp" alt="img" width="300" height="300" />
+          <div className="md:w-1/3 flex flex-auto items-center justify-center align-middle mr-6 ">
+            <img className="flex my-auto" src="logo.svg" alt="img" width="240" height="240" />
           </div>
         </div>
       </Layout>
