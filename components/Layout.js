@@ -127,15 +127,9 @@ export default function Layout({ children }) {
       {children}
 
       <div className="bg-black text-white text-xl py-10 px-6 md:px-24 flex flex-col">
-        <div>
-          <Link href="/">
-            <a className="text-white text-lg md:text-2xl flex justify-start px-10 my-auto hover:text-secundary">
-              <GiMonkey className="inline text-4xl mr-4 " /> moonwatcher.dev
-            </a>
-          </Link>
-        </div>
+        
 
-        <div className="flex space-x-5 md:space-x-10 mt-10 max-w-3xl text-2xl md:text-4xl justify-center">
+        <div id="contacto" className="flex space-x-5 md:space-x-10 text-2xl md:text-4xl justify-center">
           
           <Link href="https://api.whatsapp.com/send?phone=5492616708100" target="_blank">
             
@@ -176,7 +170,7 @@ export default function Layout({ children }) {
         </div>
 
         <div className="mt-10 text-sm max-w-2xl">
-          Gino Pietrobon is Moonwatcher. All rights reserved. &copy; &nbsp;{" "}
+          Make with &#128153; in  Mendoza, Argentina, by Gino Pietrobon. All rights reserved. &copy; &nbsp;{" "}
           {new Date().getFullYear()}
         </div>
       </div>

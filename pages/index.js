@@ -35,14 +35,14 @@ export default function Home({ blogs }) {
                 tecnología.
               </p>
               <p>
-                Te invito a recorrer mi <Link href="/article"><i>Blog</i></Link> aver si te parece
-                interesante. Leyendo mis <Link href="/news"><i>Noticias</i></Link> estarás al tanto de lo
+                Te invito a recorrer mi <Link href="/article"><i className="cursor-pointer">Blog</i></Link> aver si te parece
+                interesante. Leyendo mis <Link href="/news"><i className="cursor-pointer">Noticias</i></Link> estarás al tanto de lo
                 que ocurre en el mundo tecnológico.
               </p>
               <p>
                 También hay una sección
-                exclusiva para <Link href="/dev"><i>programadores</i></Link> y otra en donde se habla de
-                Bitcoin y <Link href="/cripto"><i>Criptomonedas</i></Link>.
+                exclusiva para <Link href="/dev"><i className="cursor-pointer">Programadores</i></Link> y otra en donde se habla de
+                Bitcoin y <Link href="/cripto"><i className="cursor-pointer">Criptomonedas</i></Link>.
               </p>
               <p>
                 Si te das una vuelta, espero tu comentario, opinión, aporte o
@@ -50,7 +50,7 @@ export default function Home({ blogs }) {
               </p>
               <p>
                 En el footer tenés mi{" "}
-                <Link href="/contacto">
+                <Link href="#contacto">
                   <span className="text-primary cursor-pointer font-bold">
                     Contacto
                   </span>

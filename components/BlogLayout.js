@@ -1,7 +1,7 @@
 import { RichText } from "prismic-reactjs";
 import Link from "next/link";
 
-export default function BlogLayout ({tag, title, blogs, secundary}) {
+export default function BlogLayout ({tag, title, blogs}) {
   return (
     <div>             
         <div className="flex">
@@ -10,16 +10,18 @@ export default function BlogLayout ({tag, title, blogs, secundary}) {
             {blogs.results.map((article, index) => (
               <div className=" mb-4 md:mb-10" key={article.uid}>
                 <Link href={`${tag}/${article.uid}`}>
-                  <h1 className="bold uppercase text-xl md:text-2xl text-blue-500 cursor-pointer mb-4">
+                  <h1 className="bold uppercase text-xl md:text-2xl text-secundary cursor-pointer mb-4">
                     {RichText.render(article.data["blog-title"])}
                   </h1>
                 </Link>
 
+                <Link href={`${tag}/${article.uid}`}>
                 <img
-                  className="w-2/3 flex  mx-auto border-gray-800 border-2"
+                  className="w-2/3 flex  mx-auto cursor-pointer border-gray-800 border-2"
                   src={article.data["image"].url}
                   alt="img"
                 />
+                </Link>
 
                 <h1 className="mt-5 mb-6 px-8">
                   {" "}
@@ -32,7 +34,7 @@ export default function BlogLayout ({tag, title, blogs, secundary}) {
             ))}
           </div>
           <div className="hidden md:flex flex-col w-1/3">
-            <h1 className="text-xl uppercase font-bold opacity-50 my-10 ml-24">
+            <h1 className="text-xl uppercase font-bold text-primary my-10 ml-24">
               Índice
             </h1>
 
@@ -40,7 +42,7 @@ export default function BlogLayout ({tag, title, blogs, secundary}) {
               
               <div key={article.uid}>
                 <Link href={`${article.tags[0]}/${article.uid}`}>
-                  <h1 className="flex bold text-base mr-10 text-blue-500 cursor-pointer">
+                  <h1 className="flex bold text-base mr-10 opacity-60 cursor-pointer">
                   {RichText.render(article.data["blog-title"])}
                   </h1>
                 </Link>
