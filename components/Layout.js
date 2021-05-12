@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { AiOutlineBell, AiOutlineUser } from "react-icons/ai";
 import { GiMonkey } from "react-icons/gi";
-import { FiSearch, FiMail } from "react-icons/fi";
+import { FiSearch, FiMail, FiTwitter } from "react-icons/fi";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaWhatsapp, FaInstagram, FaFacebook, FaLinkedinIn, FaGithub  } from "react-icons/fa"
 import Link from "next/link";
@@ -140,19 +140,26 @@ export default function Layout({ children }) {
 
           <Link href="https://www.instagram.com/moonwatcher.dev/" >
             <button aria-label="go to my instagram" target="_blank" rel="noopener" alt="instagram-logo">
-              <FaInstagram className="hover:text-indigo-700" />
+              <FaInstagram className="hover:text-yellow-700" />
+            </button>
+          </Link>
+
+          
+          <Link href="https://www.twitter.com/moonwatcher73/" >
+            <button aria-label="go to my twitter" target="_blank" rel="noopener" alt="twitter-logo">
+              <FiTwitter className="hover:text-blue-500" />
             </button>
           </Link>
 
           <Link href="https://www.facebook.com/Gini77o">
           <button aria-label="go to my fabecook" target="_blank" rel="noopener" alt="facebook-logo"> 
-            <FaFacebook className="hover:text-blue-700" />
+            <FaFacebook className="hover:text-blue-800" />
             </button>
           </Link>
 
           <Link href="https://github.com/DevZeppelin">
           <button aria-label="go to my github" target="_blank" rel="noopener" alt="github-logo"> 
-            <FaGithub className="hover:text-pink-700" />
+            <FaGithub className="hover:text-red-400" />
             </button>
           </Link>
 

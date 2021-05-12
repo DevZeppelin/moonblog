@@ -23,7 +23,7 @@ export default function Home({ blogs }) {
       <Layout>
         <div className="flex">
           <h1 className=" w-full md:w-2/3 text-center text-2xl uppercase font-bold opacity-50 mt-16 ml-2 md:ml-24">
-            ¡Bienvenido a mi sitio!
+            ¡Bienvenido a moonblog.ar!
           </h1>
         </div>
         <div className="flex mb-12 flex-wrap-reverse md:flex-wrap mx-auto my-auto">
@@ -35,14 +35,10 @@ export default function Home({ blogs }) {
                 tecnología.
               </p>
               <p>
-                Te invito a recorrer mi <Link href="/article"><i className="cursor-pointer font-bold text-blue-700">Blog</i></Link> aver si te parece
-                interesante. Leyendo mis <Link href="/news"><i className="cursor-pointer font-bold text-pink-600">Noticias</i></Link> estarás al tanto de lo
-                que ocurre en el mundo tecnológico.
-              </p>
-              <p>
-                También hay una sección
-                exclusiva para <Link href="/dev"><i className="cursor-pointer font-bold text-yellow-700">Programadores</i></Link> y otra en donde se habla de
-                Bitcoin y <Link href="/cripto"><i className="cursor-pointer font-bold text-purple-700">Criptomonedas</i></Link>.
+                Te invito a recorrer mi <Link href="/article"><strong className="uppercase cursor-pointer font-bold text-secundary hover:underline">Blog</strong></Link>, lugar donde escribo algunas de mis ideas. Leyendo mis <Link href="/news"><strong className="uppercase cursor-pointer font-bold text-secundary hover:underline">Noticias</strong></Link> estarás al tanto de lo
+                que ocurre en el mundo tecnológico. También hay una sección
+                exclusiva para <Link href="/dev"><strong className="uppercase cursor-pointer font-bold text-secundary hover:underline">Programadores</strong></Link> y otra en donde se habla de
+                Bitcoin y <Link href="/cripto"><strong className="uppercase cursor-pointer font-bold text-secundary hover:underline">Criptomonedas</strong></Link>.
               </p>
               <p>
                 Si te das una vuelta, espero tu comentario, opinión, aporte o
