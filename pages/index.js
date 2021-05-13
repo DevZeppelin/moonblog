@@ -22,8 +22,8 @@ export default function Home({ blogs }) {
       </Head>
       <Layout>
         <div className="flex">
-          <h1 className=" w-full md:w-2/3 text-center text-2xl uppercase font-bold opacity-50 mt-16 ml-2 md:ml-24">
-            ¡Bienvenido a moonblog.ar!
+          <h1 className=" w-full md:w-2/3 text-center text-2xl uppercase font-bold opacity-80 mt-16 ml-2 md:ml-24">
+          ¡ Bienvenido a <span className="text-secundary">moonblog.ar</span> !
           </h1>
         </div>
         <div className="flex mb-12 flex-wrap-reverse md:flex-wrap mx-auto my-auto">

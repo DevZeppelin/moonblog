@@ -83,6 +83,11 @@ export default function Layout({ children }) {
               Escritos &#9997;
             </a>
           </Link>
+          <Link href="/rock">
+            <a className="mr-2 mt-5 px-3 border-b-2 border-transparent hover:border-black">
+              Rock &#127928;
+            </a>
+          </Link>
         </div>
       </div>
 
@@ -120,6 +125,11 @@ export default function Layout({ children }) {
         <Link href="/escritos">
           <a className="mr-10 mt-5 px-3 border-b-2 border-transparent hover:border-black">
             Escritos
+          </a>
+        </Link>
+        <Link href="/rock">
+          <a className="mr-10 mt-5 px-3 border-b-2 border-transparent hover:border-secundary">
+            Rock
           </a>
         </Link>
       </div>
