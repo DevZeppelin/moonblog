@@ -19,7 +19,7 @@ export default function ArticleSlug({ article }) {
 // this gets called on each request
 
 export async function getServerSideProps(context) {
-  const article = await Client().getByUID("blog", context.query.article);
+  const article = await Client().getByUID("blog", context.query.blog);
 
   return {
     props: {

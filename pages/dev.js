@@ -12,7 +12,7 @@ export default function Dev({blogs}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-          <BlogLayout tag="dev" title="Dev" blogs={blogs} />          
+          <BlogLayout tag="dev" title="Moonwatcher's Dev" blogs={blogs} />          
       </Layout>
     </div>
   );

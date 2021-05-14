@@ -12,7 +12,7 @@ export default function Escritos({blogs}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-          <BlogLayout tag="news" title="News" blogs={blogs} />          
+          <BlogLayout tag="news" title="¡Moon News!" blogs={blogs} />          
       </Layout>
     </div>
   );
@@ -24,8 +24,7 @@ export async function getServerSideProps() {
     );
 
     console.log(blogs)
-    console.log(blogs.results[0])
-    console.log(blogs.results[1]) 
+    console.log(blogs.results[0].data)   
     
     
     return {

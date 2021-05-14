@@ -12,7 +12,7 @@ export default function Rock({blogs}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-          <BlogLayout tag="rock" title="Rock" blogs={blogs} />          
+          <BlogLayout tag="rock" title="Alma Rockera 100%" blogs={blogs} />          
       </Layout>
     </div>
   );

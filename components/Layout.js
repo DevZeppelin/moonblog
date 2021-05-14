@@ -58,7 +58,7 @@ export default function Layout({ children }) {
               Noticias &#128240;
             </a>
           </Link>
-          <Link href="/article">
+          <Link href="/blog">
             <a className="mr-2 mt-5 px-3 border-b-2 border-transparent hover:border-black">
               Blog &#129497;
             </a>
@@ -102,7 +102,7 @@ export default function Layout({ children }) {
             Noticias
           </a>
         </Link>
-        <Link href="/article">
+        <Link href="/blog">
           <a className="mr-10 mt-5 px-3 border-b-2 border-transparent hover:border-black">
             Blog
           </a>
