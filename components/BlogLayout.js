@@ -10,26 +10,31 @@ export default function BlogLayout({ tag, title, blogs }) {
             {title}
           </h1>
 
-          <div className="md:hidden mb-10 block text-left ">
+          <div className="md:hidden mb-8 block text-left mx-12">
             <h1 className=" text-base uppercase font-bold opacity-60 text-primary text-center">Índice</h1>
 
             {blogs.results.map((article, index) => (
               <div key={article.uid}>
                 <Link href={`${article.tags[0]}/${article.uid}`}>
-                  <h1 className="flex bold text-xs opacity-60 cursor-pointer">
+                  <span className="flex bold text-xs opacity-60 cursor-pointer">
                     •{RichText.render(article.data["blog-title"])}
-                  </h1>
+                  </span>
                 </Link>
               </div>
             ))}
           <hr/>
           </div>
 
+          <div className="mb-6">
+            <h1 className=" text-xl uppercase">Entradas</h1>
+            <p> 👇</p>
+          </div>
+
 
           {blogs.results.map((article, index) => (
             <div className=" mb-4 md:mb-10" key={article.uid}>
               <Link href={`${tag}/${article.uid}`}>
-                <h1 className="bold uppercase text-xl md:text-2xl text-secundary cursor-pointer mb-4">
+                <h1 className="bold uppercase text-xl md:text-xl text-secundary cursor-pointer mb-4">
                   {RichText.render(article.data["blog-title"])}
                 </h1>
               </Link>

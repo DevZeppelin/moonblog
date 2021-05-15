@@ -35,8 +35,7 @@ export default function Home({ blogs }) {
                 tecnología.
               </p>
               <p>
-                Te invito a recorrer mi <Link href="/article"><strong className="uppercase cursor-pointer font-bold text-secundary hover:underline">Blog</strong></Link>, lugar donde escribo algunas de mis ideas. Leyendo mis <Link href="/news"><strong className="uppercase cursor-pointer font-bold text-secundary hover:underline">Noticias</strong></Link> estarás al tanto de lo
-                que ocurre en el mundo tecnológico. También hay una sección
+                Te invito a recorrer mi <Link href="/article"><strong className="uppercase cursor-pointer font-bold text-secundary hover:underline">Blog</strong></Link>, lugar donde escribo algunas de mis ideas. Los artículos con Fecha• son <Link href="/news"><strong className="uppercase cursor-pointer font-bold text-secundary hover:underline">Noticias</strong></Link> del mundo tecnológico. También hay una sección
                 exclusiva para <Link href="/dev"><strong className="uppercase cursor-pointer font-bold text-secundary hover:underline">Programadores</strong></Link> y otra en donde se habla de
                 Bitcoin y <Link href="/cripto"><strong className="uppercase cursor-pointer font-bold text-secundary hover:underline">Criptomonedas</strong></Link>.
               </p>
@@ -45,12 +44,7 @@ export default function Home({ blogs }) {
                 consejo.
               </p>
               <p>
-                En el footer tenés mi{" "}
-                <Link href="#contacto">
-                  <span className="text-primary cursor-pointer font-bold">
-                    Contacto
-                  </span>
-                </Link>
+               🐵 Contacto! 👇                
               </p>
               
             </div>

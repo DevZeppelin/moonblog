@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap");
 
 body {
+  background-color: #eff2f5;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

@@ -17,7 +17,7 @@ export default function Layout({ children }) {
 
   return (
     <div>
-      <div className="px-2 md:px-24 bg-black text-white flex justify-between h-16">
+      <div className="px-2 md:px-24 bg-primary text-white flex justify-between h-16">
         <Link href="/">
           <a className="text-white text-2xl flex align-baseline px-2 md:px-10 my-auto hover:text-secundary">
             <GiMonkey className="inline text-4xl mr-4" /> moonwatcher.dev
@@ -88,6 +88,11 @@ export default function Layout({ children }) {
               Rock &#127928;
             </a>
           </Link>
+          <Link href="/river">
+            <a className="mr-2 mt-5 px-3 border-b-2 border-transparent hover:border-black">
+              River 🐔
+            </a>
+          </Link>
         </div>
       </div>
 
@@ -132,11 +137,16 @@ export default function Layout({ children }) {
             Rock
           </a>
         </Link>
+        <Link href="/river">
+          <a className="mr-10 mt-5 px-3 border-b-2 border-transparent hover:border-red-600">
+            River Plate
+          </a>
+        </Link>
       </div>
 
       {children}
 
-      <div className="bg-black text-white text-xl py-10 px-6 md:px-24 flex flex-col">
+      <div className="bg-primary text-white text-xl py-10 px-6 md:px-24 flex flex-col">
         
 
         <div id="contacto" className="flex space-x-5 md:space-x-10 text-2xl md:text-4xl justify-center">
