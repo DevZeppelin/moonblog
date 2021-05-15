@@ -44,52 +44,52 @@ export default function Layout({ children }) {
         </div>
       </div>
       <div
-        className="absolute z-20 right-0 bg-black text-white w-2/5 rounded-b-3xl"
+        className="absolute z-20 right-0 bg-primary text-background w-2/5 rounded-b-3xl"
         style={{ display: open ? "block" : "none" }}
       >
-        <div className="flex text-right flex-col text-base p-2 text-white divide-y mb-5">
+        <div className="flex text-right flex-col text-base p-2 text-background mb-5">
           <Link href="/">
-            <a className="mr-2  mt-2 px-3 border-b-2 border-transparent hover:border-black">
+            <a className="mr-2  mt-2 px-3 hover:border-black">
               Home &#128053;
             </a>
           </Link>
           <Link href="/news">
-            <a className="mr-2 mt-5 px-3 border-b-2 border-transparent hover:border-black">
+            <a className="mr-2 mt-5 px-3 hover:border-black">
               Noticias &#128240;
             </a>
           </Link>
           <Link href="/blog">
-            <a className="mr-2 mt-5 px-3 border-b-2 border-transparent hover:border-black">
+            <a className="mr-2 mt-5 px-3 hover:border-black">
               Blog &#129497;
             </a>
           </Link>
           <Link href="/dev">
-            <a className="mr-2 mt-5 px-3 border-b-2 border-transparent hover:border-black">
+            <a className="mr-2 mt-5 px-3 hover:border-black">
               Dev &#128187;
             </a>
           </Link>
           <Link href="/cripto">
-            <a className="mr-2 mt-5 px-3 border-b-2 border-transparent hover:border-black">
+            <a className="mr-2 mt-5 px-3 hover:border-black">
               Cripto &#128184;
             </a>
           </Link>
           <Link href="/politica">
-            <a className="mr-2 mt-5 px-3 border-b-2 border-transparent hover:border-black">
+            <a className="mr-2 mt-5 px-3 hover:border-black">
               Política &#128188;
             </a>
           </Link>
           <Link href="/escritos">
-            <a className="mr-2 mt-5 px-3 border-b-2 border-transparent hover:border-black">
+            <a className="mr-2 mt-5 px-3 hover:border-black">
               Escritos &#9997;
             </a>
           </Link>
           <Link href="/rock">
-            <a className="mr-2 mt-5 px-3 border-b-2 border-transparent hover:border-black">
+            <a className="mr-2 mt-5 px-3 hover:border-black">
               Rock &#127928;
             </a>
           </Link>
           <Link href="/river">
-            <a className="mr-2 mt-5 px-3 border-b-2 border-transparent hover:border-black">
+            <a className="mr-2 mt-5 px-3 hover:border-black">
               River 🐔
             </a>
           </Link>
