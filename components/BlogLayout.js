@@ -1,7 +1,7 @@
 import { RichText } from "prismic-reactjs";
 import Link from "next/link";
 
-export default function BlogLayout({ tag, title, blogs }) {
+export default function BlogLayout({ tag, title, blogs, extra }) {
   return (
     <div>
       <div className="flex">
@@ -10,8 +10,11 @@ export default function BlogLayout({ tag, title, blogs }) {
             {title}
           </h1>
 
-          <div className="md:hidden mb-8 block text-left mx-12">
-            <h1 className=" text-base uppercase font-bold opacity-60 text-primary text-center">Índice</h1>
+          <div className="md:hidden mb-2 block text-left mx-12">
+            
+            <h1 className=" text-base uppercase font-bold opacity-60 text-primary text-center">
+              Índice
+            </h1>
 
             {blogs.results.map((article, index) => (
               <div key={article.uid}>
@@ -22,14 +25,15 @@ export default function BlogLayout({ tag, title, blogs }) {
                 </Link>
               </div>
             ))}
-          <hr/>
+            <hr />
+            <div className="mt-4"> {extra} </div>
+            
           </div>
 
-          <div className="mb-6">
+          <div className="md:hidden mb-6">
             <h1 className=" text-xl uppercase">Entradas</h1>
             <p> 👇</p>
           </div>
-
 
           {blogs.results.map((article, index) => (
             <div className=" mb-4 md:mb-10" key={article.uid}>
@@ -57,7 +61,10 @@ export default function BlogLayout({ tag, title, blogs }) {
           ))}
         </div>
         <div className="hidden md:flex flex-col w-1/3">
-          <h1 className="text-xl uppercase font-bold text-primary my-10 ml-24">
+          
+          <div className="mr-10 mt-16"> {extra} </div>
+
+          <h1 className="text-xl uppercase font-bold text-primary mb-10 ml-24">
             Índice
           </h1>
 

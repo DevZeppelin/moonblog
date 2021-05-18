@@ -1,8 +1,9 @@
 import { RichText } from "prismic-reactjs";
 import Link from "next/link";
-
+import { useRouter } from "next/router"
 
 export default function SlugLayout({ article }) {
+  const router = useRouter()
   return (
     <div className="w-5/6 md:w-2/3 mx-auto">
       <h1 className=" text-xl md:text-3xl text-center uppercase font-bold text-secundary my-10">
@@ -16,14 +17,17 @@ export default function SlugLayout({ article }) {
       <div className="text-base md:text-lg opacity-75 space-y-2 md:space-y-4">
         {RichText.render(article.data["blog-rich-text"])}
       </div>
-      <Link href={'/'}>
+      
         <div className="flex justify-center">
-          <button className="bg-black text-white py-3 px-10 my-4 text-lg uppercase">
-            {" "}
-            Home &nbsp; 👈
+          <button
+            className="bg-primary text-white py-3 px-10 my-4 text-lg uppercase"
+            onClick={() => router.back()}
+          >
+            Volver 👈
           </button>
+          
         </div>
-      </Link>
+      
     </div>
   );
 }

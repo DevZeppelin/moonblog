@@ -70,7 +70,7 @@ export default function Layout({ children }) {
           </Link>
           <Link href="/cripto">
             <a className="mr-2 mt-5 px-3 hover:border-black">
-              Cripto &#128184;
+              Criptos &#128184;
             </a>
           </Link>
           <Link href="/politica">
@@ -119,7 +119,7 @@ export default function Layout({ children }) {
         </Link>
         <Link href="/cripto">
           <a className="mr-10 mt-5 px-3 border-b-2 border-transparent hover:border-black">
-            Cripto
+            Criptos
           </a>
         </Link>
         <Link href="/politica">

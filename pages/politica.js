@@ -12,7 +12,7 @@ export default function Politica({blogs}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-          <BlogLayout tag="politica" title="Blog de Política" blogs={blogs} />          
+          <BlogLayout tag="politica" title="Blog de Política 💼" blogs={blogs} />          
       </Layout>
     </div>
   );

@@ -15,7 +15,7 @@ export default function Blog({blogs}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-          <BlogLayout tag="blog" title="Moon-Blog" blogs={blogs} />          
+          <BlogLayout tag="blog" title="Moon-Blog ⭐" blogs={blogs} />          
       </Layout>
     </div>
   );

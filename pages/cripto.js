@@ -12,7 +12,7 @@ export default function Cripto({blogs}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-          <BlogLayout tag="cripto" title="Moonwatcher's Cripto" blogs={blogs} />          
+          <BlogLayout tag="cripto" title="Blog Cripto 💎" blogs={blogs} />          
       </Layout>
     </div>
   );
