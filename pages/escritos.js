@@ -16,7 +16,7 @@ export default function Escritos({ blogs }) {
       <Layout>
         <BlogLayout
           tag="escritos"
-          title="Moonwatcher's Escritos 📝"
+          title="Moonwatcher's Escritos ✍"
           blogs={blogs}
           extra={
             <Link href="/adriel">

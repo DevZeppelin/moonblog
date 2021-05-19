@@ -11,7 +11,6 @@ export default function BlogLayout({ tag, title, blogs, extra }) {
           </h1>
 
           <div className="md:hidden mb-2 block text-left mx-12">
-            
             <h1 className=" text-base uppercase font-bold opacity-60 text-primary text-center">
               Índice
             </h1>
@@ -27,7 +26,6 @@ export default function BlogLayout({ tag, title, blogs, extra }) {
             ))}
             <hr />
             <div className="mt-4"> {extra} </div>
-            
           </div>
 
           <div className="md:hidden mb-6">
@@ -45,13 +43,16 @@ export default function BlogLayout({ tag, title, blogs, extra }) {
 
               <Link href={`${tag}/${article.uid}`}>
                 <img
-                  className="w-2/3 flex  mx-auto cursor-pointer border-gray-800 border-2"
+                  className="w-2/3 flex  mx-auto cursor-pointer border-gray-800 border-2 mb-2"
                   src={article.data["image"].url}
                   alt="img"
                 />
               </Link>
+              <span className="opacity-50">
+                {blogs.results[index].data["blog-date"]}
+              </span>
 
-              <h1 className="mt-5 mb-6 px-8">
+              <h1 className="mt-2 mb-6 px-8">
                 {" "}
                 {RichText.render(article.data["preview-info"])}
               </h1>
@@ -61,10 +62,12 @@ export default function BlogLayout({ tag, title, blogs, extra }) {
           ))}
         </div>
         <div className="hidden md:flex flex-col w-1/3">
-          
           <div className="mr-10 mt-16"> {extra} </div>
 
-          <h1 className="text-xl uppercase font-bold text-primary mb-10 ml-24">
+          <h1
+            className="text-xl uppercase font-bold text-primary mb-10 ml-24"
+            
+          >
             Índice
           </h1>
 

@@ -15,12 +15,12 @@ export default function Escritos({ blogs }) {
       <Layout>
         <BlogLayout
           tag="escritos"
-          title="Escritos de mi hermano Adriel 📝"
+          title="Escritos de mi hermano Adriel ✍"
           blogs={blogs}
         />
         <Link href={"/escritos"}>
           <div className="flex justify-center">
-            <button className="bg-primary text-white py-3 px-10 my-4 text-lg uppercase">
+            <button className="bg-primary text-white py-3 px-10 my-4 text-lg uppercase rounded-md">
               {" "}
               Volver a Escritos 👈
             </button>

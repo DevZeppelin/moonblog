@@ -12,7 +12,7 @@ export default function River({blogs}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-          <BlogLayout tag="rock" title="Blog de River Plate ♥" blogs={blogs} />          
+          <BlogLayout tag="rock" title="Blog de River Plate 🐓" blogs={blogs} />          
       </Layout>
     </div>
   );
