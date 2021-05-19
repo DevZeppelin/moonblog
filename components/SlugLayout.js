@@ -12,7 +12,7 @@ export default function SlugLayout({ article }) {
         {RichText.render(article.data["blog-title"])}
       </h1>
       <div className="text-base text-center md:text-lg opacity-50 space-y-2 md:space-y-4 ">     
-              Redactado el día {date[8]+date[9]} del mes {date[5]+date[6]} del {date[0]+date[1]+date[2]+date[3]} 
+              Redactado el día {date[8]+date[9]} del mes {date[5]+date[6]} del año {date[0]+date[1]+date[2]+date[3]} 
       </div>
       <img
         className="shadow-xl text-center mb-10 md:mb-20 mx-auto border-gray-800 border-2"

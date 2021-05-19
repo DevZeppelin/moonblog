@@ -12,7 +12,7 @@ export default function Escritos({blogs}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-          <BlogLayout tag="news" title="¡Moon News! 📰" blogs={blogs} />          
+          <BlogLayout tag="news" title="¡Moon News! 👓" blogs={blogs} />          
       </Layout>
     </div>
   );

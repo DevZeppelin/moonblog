@@ -36,7 +36,7 @@ export default function BlogLayout({ tag, title, blogs, extra }) {
           {blogs.results.map((article, index) => (
             <div className=" mb-4 md:mb-10" key={article.uid}>
               <Link href={`${tag}/${article.uid}`}>
-                <h1 className="bold uppercase text-xl md:text-xl text-secundary cursor-pointer mb-4">
+                <h1 className="bold uppercase text-xl md:text-2xl text-secundary cursor-pointer mb-4">
                   {RichText.render(article.data["blog-title"])}
                 </h1>
               </Link>
