@@ -22,8 +22,8 @@ export default function Escritos({ blogs }) {
             extra={
               <Link href="/tecnoticiero">
                 <div className=" cursor-pointer text-4xl flex align-bottom justify-center mb-10 -mt-1.5 text-white bg-primary rounded-md py-2">
-                  <span className=" text-lg md:text-2xl">
-                    Ir al Buscador de Noticias •
+                  <span className=" text-lg md:text-2xl mx-2">
+                    Buscador de Noticias •
                   </span>
                   <BiSearchAlt />{" "}
                 </div>

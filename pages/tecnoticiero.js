@@ -20,7 +20,7 @@ export default function News({ news }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    Router.push(`/news/?searchTerm=${text}/#notice-position`);
+    Router.push(`/tecnoticiero/?searchTerm=${text}/#notice-position`);
   };
 
   const searchFormNews = () => (
@@ -70,9 +70,9 @@ export default function News({ news }) {
           <div className="text-4xl text-indigo-600">{coolMsg}</div>
           <input
             type="text"
-            placeholder="La web reacciona a lo que escribas aquí"
+            placeholder="Escribí y mirá"
             onChange={handleChange("coolMsg")}
-            className="m-6 p-2 border-2 border-primary rounded-md w-80"
+            className="m-6 p-2 border-2 border-primary rounded-md w-full mx-auto md:w-60"
           />
         </form>
       </div>

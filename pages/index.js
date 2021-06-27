@@ -73,7 +73,7 @@ export default function Home({ blogs }) {
                   </Link>
                   <Link href="/escritos">
                     <div className="indexItem space-y-2 p-6 rounded-lg cursor-pointer">
-                      <span>📜</span>
+                      <span>📝</span>
                       <p>
                         Textos entretenidos escritos por mi y por mi hermano
                         Adriel:
