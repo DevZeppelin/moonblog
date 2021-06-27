@@ -10,6 +10,7 @@ export default function NewsSlug({ article }) {
         <title>¡moonwatcher's news!</title>
       </Head>
       <Layout>
+        
         <SlugLayout article={article}/>
       </Layout>
     </div>

@@ -50,7 +50,7 @@ export default function Layout({ children }) {
         <div className="flex text-right flex-col text-base p-2 text-background mb-5">
           <Link href="/">
             <a className="mr-2  mt-2 px-3 hover:border-black">
-              Home &#128053;
+              Home 🏠
             </a>
           </Link>
           <Link href="/news">
@@ -60,7 +60,7 @@ export default function Layout({ children }) {
           </Link>
           <Link href="/blog">
             <a className="mr-2 mt-5 px-3 hover:border-black">
-              Blog &#129497;
+              Blog &#128053;
             </a>
           </Link>
           <Link href="/dev">
@@ -96,7 +96,7 @@ export default function Layout({ children }) {
         </div>
       </div>
 
-      <div className="hidden md:flex px-2 md:px-24 bg-white border-b border-black text-base">
+      <div className="hidden md:flex px-2 md:px-24 bg-backgroundSecundary border-b border-black text-base">
         <Link href="/">
           <a className="mr-10  mt-5 px-3 border-b-2 border-transparent hover:border-black">
             Home
