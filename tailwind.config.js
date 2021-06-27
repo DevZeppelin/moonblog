@@ -8,8 +8,8 @@ module.exports = {
             colors : {
                 primary : '#0e364e',
                 secundary: '#13a89e',
-                background: '#eff2f5',
-                backgroundSecundary: '#ebf4f5'
+                background: '#d6d4d4',
+                backgroundSecundary: '#608b9b'
             },
             fontFamily : {
                 body : ['Dosis']
@@ -18,7 +18,10 @@ module.exports = {
     },
     
     variants: {
+       
         borderColor: ["hover", "focus"],
+        borderStyle: ['hover', 'focus'], 
+          
     },
     plugins: []
 }

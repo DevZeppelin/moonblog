@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { AiOutlineBell, AiOutlineUser } from "react-icons/ai";
+import { BiCodeAlt } from "react-icons/bi";
 import { GiMonkey } from "react-icons/gi";
 import { FiSearch, FiMail, FiTwitter } from "react-icons/fi";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { FaWhatsapp, FaInstagram, FaFacebook, FaLinkedinIn, FaGithub  } from "react-icons/fa"
+import { GiHamburgerMenu, GiZeppelin } from "react-icons/gi";
+import { FaWhatsapp, FaInstagram, FaFacebook, FaLinkedinIn, FaGithub, FaRegNewspaper } from "react-icons/fa"
 import Link from "next/link";
 
 
@@ -24,17 +25,12 @@ export default function Layout({ children }) {
           </a>
         </Link>
 
-        <div className="hidden md:flex items-center w-1/3 text-lg">
-          <input
-            type="text"
-            className="bg-transparent border-b w-full border-white outline-none"
-          />
-          <FiSearch className="ml-8 text-2xl hover:text-secundary cursor-pointer" />
-        </div>
+        
 
         <div className="hidden md:flex items-center text-2xl">
-          <AiOutlineBell className="mr-2 cursor-pointer hover:text-secundary" />
-          <AiOutlineUser className="mr-2 cursor-pointer hover:text-secundary" />
+          <BiCodeAlt className="mr-4 cursor-pointer hover:text-secundary" />
+          <GiZeppelin className="mr-4 cursor-pointer hover:text-secundary" />
+          <FaRegNewspaper className="mr-4 text-2xl hover:text-secundary cursor-pointer" />
         </div>
 
         <div className="p-2 md:p-4 md:hidden flex justify-center w-10 text-2xl">
@@ -96,49 +92,49 @@ export default function Layout({ children }) {
         </div>
       </div>
 
-      <div className="hidden md:flex px-2 md:px-24 bg-backgroundSecundary border-b border-black text-base">
+      <div className="hidden md:flex justify-center px-2 md:px-24 bg-backgroundSecundary text-white border-b border-black text-base">
         <Link href="/">
-          <a className="mr-10  mt-5 px-3 border-b-2 border-transparent hover:border-black">
+          <a className="mr-6  mt-5 px-3 border-b-2 border-transparent hover:border-black">
             Home
           </a>
         </Link>
         <Link href="/news">
-          <a className="mr-10 mt-5 px-3 border-b-2 border-transparent hover:border-black">
+          <a className="mr-6 mt-5 px-3 border-b-2 border-transparent hover:border-black">
             Noticias
           </a>
         </Link>
         <Link href="/blog">
-          <a className="mr-10 mt-5 px-3 border-b-2 border-transparent hover:border-black">
+          <a className="mr-6 mt-5 px-3 border-b-2 border-transparent hover:border-black">
             Blog
           </a>
         </Link>
         <Link href="/dev">
-          <a className="mr-10 mt-5 px-3 border-b-2 border-transparent hover:border-black">
+          <a className="mr-6 mt-5 px-3 border-b-2 border-transparent hover:border-black">
             Dev
           </a>
         </Link>
         <Link href="/cripto">
-          <a className="mr-10 mt-5 px-3 border-b-2 border-transparent hover:border-black">
+          <a className="mr-6 mt-5 px-3 border-b-2 border-transparent hover:border-black">
             Cripto$
           </a>
         </Link>
         <Link href="/politica">
-          <a className="mr-10 mt-5 px-3 border-b-2 border-transparent hover:border-black">
+          <a className="mr-6 mt-5 px-3 border-b-2 border-transparent hover:border-black">
             Política
           </a>
         </Link>
         <Link href="/escritos">
-          <a className="mr-10 mt-5 px-3 border-b-2 border-transparent hover:border-black">
+          <a className="mr-6 mt-5 px-3 border-b-2 border-transparent hover:border-black">
             Escritos
           </a>
         </Link>
         <Link href="/rock">
-          <a className="mr-10 mt-5 px-3 border-b-2 border-transparent hover:border-secundary">
+          <a className="mr-6 mt-5 px-3 border-b-2 border-transparent hover:border-secundary">
             Rock
           </a>
         </Link>
         <Link href="/river">
-          <a className="mr-10 mt-5 px-3 border-b-2 border-transparent hover:border-red-600">
+          <a className="mr-6 mt-5 px-3 border-b-2 border-transparent hover:border-red-600">
             River Plate
           </a>
         </Link>

@@ -49,7 +49,7 @@ export default function News({ news }) {
                 value={text}
                 onChange={handleChange("text")}
               />
-              <button className="bg-primary text-white rounded-md w-28 align-middle">
+              <button className="bg-primary text-white rounded-md w-28 py-2 align-middle">
                 Search
               </button>
             </div>
@@ -70,9 +70,9 @@ export default function News({ news }) {
           <div className="text-4xl text-indigo-600">{coolMsg}</div>
           <input
             type="text"
-            placeholder="Tus letras en tiempo real"
+            placeholder="La web reacciona a lo que escribas aquí"
             onChange={handleChange("coolMsg")}
-            className="m-6 p-2 border-2 border-primary rounded-md"
+            className="m-6 p-2 border-2 border-primary rounded-md w-80"
           />
         </form>
       </div>
