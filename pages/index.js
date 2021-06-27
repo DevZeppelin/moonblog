@@ -34,51 +34,48 @@ export default function Home({ blogs }) {
                 </h2>
                 <div className="md:grid grid-cols-2 gap-2">
                   <Link href="/dev">
-                    <div className="indexItem space-y-2 p-6 rounded-lg cursor-pointer">
+                    <div className="indexItem1 space-y-2 p-6 rounded-lg cursor-pointer">
                       <span>💻</span>
                       <p>
-                        Camino a seguir para convertirte en un{" "}
-                        <i>programador</i>:
+                        Blog de <i>programación</i> donde comparto todas las enseñanzas y contenido que hayo útil para enriquecer a la comunidad
                       </p>
-                      <button className="bg-primary text-white py-1 px-5 uppercase rounded-md cursor-pointer font-bold hover:underline">
+                      <button className="bg-primary text-white py-1 px-5 uppercase rounded-md cursor-pointer font-bold hover:bg-indigo-600">
                         Blog Dev
                       </button>
                     </div>
                   </Link>
 
                   <Link href="/news">
-                    <div className="indexItem space-y-2 p-6 rounded-lg cursor-pointer">
+                    <div className="indexItem2 space-y-2 p-6 rounded-lg cursor-pointer">
                       <span>📻</span>
                       <p>
-                        <i>Noticiero tecnológocio</i> con un buscador de
-                        noticias súper-veloz:
+                        Selección de las noticias más relevantes del sector, y además un simple y <i>potente buscador</i> de noticias:
                       </p>
-                      <button className="transform hover:underline bg-primary text-white py-1 px-5 uppercase rounded-md cursor-pointer font-bold">
+                      <button className="bg-primary text-white py-1 px-5 uppercase rounded-md cursor-pointer font-bold hover:bg-red-500">
                         Tecnoticiero
                       </button>
                     </div>
                   </Link>
 
                   <Link href="/cripto">
-                    <div className="indexItem space-y-2 p-6 rounded-lg cursor-pointer">
+                    <div className="indexItem3 space-y-2 p-6 rounded-lg cursor-pointer">
                       <span>💰</span>
                       <p>
-                        Sección del Blog enfocada en <i>Bitcoin</i> y{" "}
+                        Blog acerca de economía, <i>Bitcoin</i> y{" "}
                         <i>Criptomonedas</i>:
                       </p>
-                      <button className="bg-primary text-white py-1 px-5 uppercase rounded-md cursor-pointer font-bold hover:underline">
+                      <button className="bg-primary text-white py-1 px-5 uppercase rounded-md cursor-pointer font-bold hover:bg-green-600">
                         Criptomonedas
                       </button>
                     </div>
                   </Link>
                   <Link href="/escritos">
-                    <div className="indexItem space-y-2 p-6 rounded-lg cursor-pointer">
+                    <div className="indexItem4 space-y-2 p-6 rounded-lg cursor-pointer">
                       <span>📝</span>
                       <p>
-                        Textos entretenidos escritos por mi y por mi hermano
-                        Adriel:
+                        Blog de escritos divertidos (o no) escritos por mi y por mi hermano Adriel.
                       </p>
-                      <button className="bg-primary text-white py-1 px-5 uppercase rounded-md cursor-pointer font-bold hover:underline">
+                      <button className="bg-primary text-white py-1 px-5 uppercase rounded-md cursor-pointer font-bold hover:bg-blue-600">
                         Escritos
                       </button>
                     </div>
@@ -98,10 +95,25 @@ export default function Home({ blogs }) {
           </div>
         </div>
         <style jsx>{`
-          .indexItem:hover {
+          .indexItem1:hover {
+            border: solid 1px #C01CDA;
+            box-shadow: 0px 0px 10px #78088A;
+            background-color: #F0CEF9;
+          }
+          .indexItem2:hover {
+            border: solid 1px #FF6609 ;
+            box-shadow: 0px 0px 10px #B84906;
+            background-color: #FFBB8E;
+          }
+          .indexItem3:hover {
+            border: solid 1px #0E5203;
+            box-shadow: 0px 0px 10px #2EDC12;
+            background-color: #A6FFB6;
+          }
+          .indexItem4:hover {
             border: solid 1px #13a89e;
             box-shadow: 0px 0px 10px #0e364e;
-            background-color: whitesmoke;
+            background-color: #A0EEFF;
           }
         `}</style>
       </Layout>

@@ -1,15 +1,15 @@
 import React, { useState } from "react";
-import { BiCodeAlt } from "react-icons/bi";
+import IconLinksLayout from "./IconLinksLayout";
+
 import { GiMonkey } from "react-icons/gi";
-import { FiSearch, FiMail, FiTwitter } from "react-icons/fi";
-import { GiHamburgerMenu, GiZeppelin } from "react-icons/gi";
+import { FiMail, FiTwitter } from "react-icons/fi";
+import { GiHamburgerMenu } from "react-icons/gi";
 import {
   FaWhatsapp,
   FaInstagram,
   FaFacebook,
   FaLinkedinIn,
   FaGithub,
-  FaRegNewspaper,
 } from "react-icons/fa";
 import Link from "next/link";
 
@@ -25,30 +25,12 @@ export default function Layout({ children }) {
     <div>
       <div className="px-2 md:px-24 bg-primary text-white flex justify-between h-16">
         <Link href="/">
-          <a className="text-white text-2xl flex align-baseline px-2 md:px-10 my-auto hover:text-secundary">
+          <a className="text-background text-2xl flex align-baseline px-2 md:px-10 my-auto hover:text-secundary">
             <GiMonkey className="inline text-4xl mr-4" /> moonwatcher.dev
           </a>
         </Link>
 
-        <div className="hidden md:flex items-center text-2xl">
-          <abbr title="Buscador de noticias">
-            <Link href="/tecnoticiero">
-              <FiSearch className=" navIcon mr-4 text-2xl hover:text-secundary cursor-pointer" />
-            </Link>
-          </abbr>
-
-          <abbr title="codeObrero ¡para empezar a programar!">
-          <a href="https://code-obrero.vercel.app" target="_blank">
-            <BiCodeAlt className="mr-4 cursor-pointer hover:text-secundary" />
-          </a>
-          </abbr>
-
-          <abbr title="DevZeppelin. Páginas web optimizadas, 100% perfomance">
-          <a href="https://dev-zeppelin.vercel.app" target="_blank">
-            <GiZeppelin className="mr-4 cursor-pointer hover:text-secundary" />
-          </a>
-          </abbr>
-        </div>
+        <IconLinksLayout state={"hidden md:flex items-center"} />
 
         <div className="p-2 md:p-4 md:hidden flex justify-center w-10 text-2xl">
           <button onClick={toggleNav}>
@@ -99,7 +81,7 @@ export default function Layout({ children }) {
         </div>
       </div>
 
-      <div className="hidden md:flex justify-center px-2 md:px-24 bg-backgroundSecundary text-white border-b border-black text-base">
+      <div className="hidden md:flex justify-center px-2 md:px-24 bg-backgroundSecundary text-background border-b border-black text-base">
         <Link href="/">
           <a className="mr-6  mt-5 px-3 border-b-2 border-transparent hover:border-black">
             Home
@@ -149,7 +131,21 @@ export default function Layout({ children }) {
 
       {children}
 
-      <div className="bg-primary text-white text-xl py-10 px-6 md:px-24 flex flex-col">
+      <div className="md:hidden flex flex-col mx-auto">
+        <p className="text-center font-bold py-3 bg-primary text-background">⭐ Recomendaciones ⭐</p>
+        <br />
+        <div>
+          <IconLinksLayout
+            state={"flex md:hidden text-center flex-col pl-6 text-primary text-sm"}
+            searchText={<p className="items-center">¡Potente buscador de noticias!</p>}
+            codeText={<p className="items-center">codeObrero ¡Empezá hoy a programar!</p>}
+            zeppelinText={<p className="items-center">DevZeppelin. Webs 100% perfomance</p>}
+          />
+        </div>
+      </div>
+
+      <div className="bg-primary text-white text-xl px-6 md:px-24 flex flex-col py-10 mt-8">
+        
         <div
           id="contacto"
           className="flex space-x-5 md:space-x-10 text-2xl md:text-4xl justify-center"
