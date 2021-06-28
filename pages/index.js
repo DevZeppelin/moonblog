@@ -1,6 +1,10 @@
 import Head from "next/head";
 import Layout from "../components/Layout";
 import Link from "next/link";
+import { ImPencil2, ImBook } from "react-icons/im";
+import { GoRadioTower } from "react-icons/go";
+import { FaBtc } from "react-icons/fa";
+
 
 export default function Home({ blogs }) {
   return (
@@ -34,48 +38,48 @@ export default function Home({ blogs }) {
                 </h2>
                 <div className="md:grid grid-cols-2 gap-2">
                   <Link href="/dev">
-                    <div className="indexItem1 space-y-2 p-6 rounded-lg cursor-pointer">
-                      <span>💻</span>
+                    <div className="indexItem1 space-y-3 p-6 rounded-lg cursor-pointer text-primary">
+                      <ImPencil2 className="mx-auto w-12 md:w-8  h-12 md:h-8  " />
                       <p>
                         Blog de <i>programación</i> donde comparto todas las enseñanzas y contenido que hayo útil para enriquecer a la comunidad
                       </p>
-                      <button className="bg-primary text-white py-1 px-5 uppercase rounded-md cursor-pointer font-bold hover:bg-indigo-600">
+                      <button className="border-2 border-primary text-primary py-1 px-5 uppercase rounded-md cursor-pointer font-bold hover:bg-indigo-400">
                         Blog Dev
                       </button>
                     </div>
                   </Link>
 
                   <Link href="/news">
-                    <div className="indexItem2 space-y-2 p-6 rounded-lg cursor-pointer">
-                      <span>📻</span>
+                    <div className="indexItem2 space-y-3 p-6 rounded-lg cursor-pointer text-primary">
+                    <GoRadioTower className="mx-auto w-12 md:w-8  h-12 md:h-8 " />
                       <p>
                         Selección de las noticias más relevantes del sector, y además un simple y <i>potente buscador</i> de noticias:
                       </p>
-                      <button className="bg-primary text-white py-1 px-5 uppercase rounded-md cursor-pointer font-bold hover:bg-red-500">
+                      <button className="border-2 border-primary text-primary py-1 px-5 uppercase rounded-md cursor-pointer font-bold hover:bg-red-400">
                         Tecnoticiero
                       </button>
                     </div>
                   </Link>
 
                   <Link href="/cripto">
-                    <div className="indexItem3 space-y-2 p-6 rounded-lg cursor-pointer">
-                      <span>💰</span>
+                    <div className="indexItem3 space-y-3 p-6 rounded-lg cursor-pointer text-primary">
+                    <FaBtc className="mx-auto w-12 md:w-8  h-12 md:h-8 " />
                       <p>
                         Blog acerca de economía, <i>Bitcoin</i> y{" "}
                         <i>Criptomonedas</i>:
                       </p>
-                      <button className="bg-primary text-white py-1 px-5 uppercase rounded-md cursor-pointer font-bold hover:bg-green-600">
+                      <button className="border-2 border-primary text-primary py-1 px-5 uppercase rounded-md cursor-pointer font-bold hover:bg-green-400">
                         Criptomonedas
                       </button>
                     </div>
                   </Link>
                   <Link href="/escritos">
-                    <div className="indexItem4 space-y-2 p-6 rounded-lg cursor-pointer">
-                      <span>📝</span>
+                    <div className="indexItem4 space-y-3 p-6 rounded-lg cursor-pointer text-primary">
+                    <ImBook className="mx-auto w-12 md:w-8  h-12 md:h-8 " />
                       <p>
                         Blog de escritos divertidos (o no) escritos por mi y por mi hermano Adriel.
                       </p>
-                      <button className="bg-primary text-white py-1 px-5 uppercase rounded-md cursor-pointer font-bold hover:bg-blue-600">
+                      <button className="border-2 border-primary text-primary py-1 px-5 uppercase rounded-md cursor-pointer font-bold hover:bg-blue-400">
                         Escritos
                       </button>
                     </div>
@@ -99,21 +103,26 @@ export default function Home({ blogs }) {
             border: solid 1px #C01CDA;
             box-shadow: 0px 0px 10px #78088A;
             background-color: #F0CEF9;
+            color: #78088A;
+            
           }
           .indexItem2:hover {
             border: solid 1px #FF6609 ;
             box-shadow: 0px 0px 10px #B84906;
-            background-color: #FFBB8E;
+            background-color: #FFDEB2;
+            color: #B84906;
           }
           .indexItem3:hover {
             border: solid 1px #0E5203;
             box-shadow: 0px 0px 10px #2EDC12;
             background-color: #A6FFB6;
+            color: #0E5203;
           }
           .indexItem4:hover {
             border: solid 1px #13a89e;
-            box-shadow: 0px 0px 10px #0e364e;
+            box-shadow: 0px 0px 10px #0063BF;
             background-color: #A0EEFF;
+            color: #0063BF
           }
         `}</style>
       </Layout>

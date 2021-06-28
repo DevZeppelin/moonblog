@@ -39,7 +39,7 @@ export default function Layout({ children }) {
         </div>
       </div>
       <div
-        className="absolute z-20 right-0 bg-primary text-background w-2/5 rounded-b-3xl"
+        className="absolute z-20 right-0 bg-primary text-background w-1/2 rounded-b-3xl"
         style={{ display: open ? "block" : "none" }}
       >
         <div className="flex text-right flex-col text-base p-2 text-background mb-5">
@@ -55,11 +55,11 @@ export default function Layout({ children }) {
             <a className="mr-2 mt-5 px-3 hover:border-black">Blog &#128053;</a>
           </Link>
           <Link href="/dev">
-            <a className="mr-2 mt-5 px-3 hover:border-black">Dev &#128187;</a>
+            <a className="mr-2 mt-5 px-3 hover:border-black">Programación &#128187;</a>
           </Link>
           <Link href="/cripto">
             <a className="mr-2 mt-5 px-3 hover:border-black">
-              Cripto$ &#128184;
+              Criptomonedas &#128184;
             </a>
           </Link>
           <Link href="/politica">
@@ -99,12 +99,12 @@ export default function Layout({ children }) {
         </Link>
         <Link href="/dev">
           <a className="mr-6 mt-5 px-3 border-b-2 border-transparent hover:border-black">
-            Dev
+            Programación
           </a>
         </Link>
         <Link href="/cripto">
           <a className="mr-6 mt-5 px-3 border-b-2 border-transparent hover:border-black">
-            Cripto$
+            Criptomonedas
           </a>
         </Link>
         <Link href="/politica">
@@ -136,10 +136,10 @@ export default function Layout({ children }) {
         <br />
         <div>
           <IconLinksLayout
-            state={"flex md:hidden text-center flex-col pl-6 text-primary text-sm"}
-            searchText={<p className="items-center">¡Potente buscador de noticias!</p>}
-            codeText={<p className="items-center">codeObrero ¡Empezá hoy a programar!</p>}
-            zeppelinText={<p className="items-center">DevZeppelin. Webs 100% perfomance</p>}
+            state={"flex md:hidden text-center flex-col pl-6 text-primary text-sm align-middle"}
+            searchText={<p className="my-auto font-bold hover:text-secundary">¡Potente buscador de noticias!</p>}
+            codeText={<p className="my-auto font-bold hover:text-secundary">codeObrero ¡Empezá hoy a programar!</p>}
+            zeppelinText={<p className="my-auto font-bold hover:text-secundary">DevZeppelin. Webs 100% perfomance</p>}
           />
         </div>
       </div>
