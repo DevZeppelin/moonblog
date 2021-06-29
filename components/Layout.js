@@ -33,7 +33,7 @@ export default function Layout({ children }) {
         <IconLinksLayout state={"hidden md:flex items-center"} />
 
         <div className="p-2 md:p-4 md:hidden flex justify-center w-10 text-2xl">
-          <button onClick={toggleNav}>
+          <button onClick={toggleNav} aria-label="Hamburguer Button of Main Content">
             <GiHamburgerMenu />
           </button>
         </div>

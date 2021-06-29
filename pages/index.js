@@ -4,6 +4,7 @@ import Link from "next/link";
 import { ImPencil2, ImBook } from "react-icons/im";
 import { GoRadioTower } from "react-icons/go";
 import { FaBtc } from "react-icons/fa";
+import Logo from "../components/icon/Logo";
 
 export default function Home({ blogs }) {
   return (
@@ -14,11 +15,11 @@ export default function Home({ blogs }) {
         <meta charSet="UTF-8" />
         <meta
           name="description"
-          content="Moonwatcher Blog. Artículos, Noticias, Criptomonedas, Escritos, Blog de programación (dev) y Artículos sobre política"
+          content="Moonblog. Moonwatcher Blog, Tecnoticiero, Criptomonedas, Bitcoin, Escritos, Blog de programación (dev), blog de política, rock argentino, Club Atlético River Plate"
         />
         <meta
           name="keywords"
-          content="dev,crypto,news,programacion,noticias,criptomonedas,politica,articles,articulos,blog,escritos,moonwatcher,blog"
+          content="moonblog, moonwatcher, blog, next.js, react.js, javascript, jam stack, prismic, dev, programación, criptomonedas, tech news, noticias, articles, articulos, escritos"
         />
         <meta name="author" content="Gino Pietrobon" />
       </Head>
@@ -29,7 +30,7 @@ export default function Home({ blogs }) {
               <div className=" pt-8 space-y-5">
                 <h1 className=" w-full md:w-2/3 text-center text-2xl uppercase font-bold opacity-80 ml-2 md:ml-24">
                   ¡ Bienvenido a{" "}
-                  <span className="text-secundary">moonblog</span> !
+                  <span className="text-lowContrast border-black">moonblog</span> !
                 </h1>
                 <h2 className="text-xl pb-6">
                   Soy <b>Gino</b> y ésta es mi Web, donde encontrarás cosas
@@ -37,11 +38,11 @@ export default function Home({ blogs }) {
                 </h2>
                 <div className="md:grid grid-cols-2 gap-2">
                   <Link href="/dev">
-                    <div className="indexItem1 space-y-3 p-3 pb-8 md:pb-4 rounded-lg cursor-pointer text-primary">
+                    <div className="indexItem1 space-y-3 p-3 pb-4 mb-4 md:pb-4 rounded-lg cursor-pointer text-primary">
                       <ImPencil2 className="mx-auto w-12 md:w-8  h-12 md:h-8  " />
                       <p>
                         Blog de <i>programación</i> donde comparto mi
-                        aprendizaje y contenido para la comunidad
+                        aprendizaje y contenido relevante
                       </p>
                       <button className="border-2 border-primary text-primary py-1 px-5 uppercase rounded-md cursor-pointer font-bold hover:bg-indigo-400">
                         Blog Dev
@@ -50,7 +51,7 @@ export default function Home({ blogs }) {
                   </Link>
 
                   <Link href="/news">
-                    <div className="indexItem2 space-y-3 p-3 pb-8 md:pb-4 rounded-lg cursor-pointer text-primary">
+                    <div className="indexItem2 space-y-3 p-3 pb-4 mb-4 md:pb-4 rounded-lg cursor-pointer text-primary">
                       <GoRadioTower className="mx-auto w-12 md:w-8  h-12 md:h-8 " />
                       <p>
                         Selección de noticias <i>tech</i>, y además un simple y{" "}
@@ -63,7 +64,7 @@ export default function Home({ blogs }) {
                   </Link>
 
                   <Link href="/cripto">
-                    <div className="indexItem3 space-y-3 p-3 pb-8 md:pb-4 rounded-lg cursor-pointer text-primary">
+                    <div className="indexItem3 space-y-3 p-3 pb-4 mb-4 md:pb-4 rounded-lg cursor-pointer text-primary">
                       <FaBtc className="mx-auto w-12 md:w-8  h-12 md:h-8 " />
                       <p>
                         Blog acerca de economía, <i>Bitcoin</i> y{" "}
@@ -75,7 +76,7 @@ export default function Home({ blogs }) {
                     </div>
                   </Link>
                   <Link href="/escritos">
-                    <div className="indexItem4 space-y-3 p-3 pb-8 md:pb-4 rounded-lg cursor-pointer text-primary">
+                    <div className="indexItem4 space-y-3 p-3 pb-4 mb-4 md:pb-4 rounded-lg cursor-pointer text-primary">
                       <ImBook className="mx-auto w-12 md:w-8  h-12 md:h-8 " />
                       <p>
                         Blog de escritos divertidos (o no) escritos por mi y por
@@ -86,18 +87,15 @@ export default function Home({ blogs }) {
                       </button>
                     </div>
                   </Link>
+
+                  
                 </div>
               </div>
             </div>
           </div>
           <div className="md:w-1/4 flex flex-auto items-center justify-center align-middle mr-6">
-            <img
-              className="flex my-auto"
-              src="logo.svg"
-              alt="img"
-              width="240"
-              height="240"
-            />
+          <Logo />
+            
           </div>
         </div>
         <style jsx>{`
@@ -126,7 +124,7 @@ export default function Home({ blogs }) {
             color: #0063bf;
           }
 
-          img:hover {
+          .monkeyLogo:hover {
             transform: rotate(-360deg);
             transition: 1s;
           }
