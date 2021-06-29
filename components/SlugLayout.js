@@ -8,7 +8,7 @@ export default function SlugLayout({ article }) {
 
   return (
     <div className="w-5/6 md:w-2/3 mx-auto">
-      <h1 className=" text-xl md:text-3xl text-center uppercase font-bold text-secundary my-10">
+      <h1 className=" text-xl md:text-3xl text-center uppercase font-bold text-lowContrast my-10">
         {RichText.render(article.data["blog-title"])}
       </h1>
       <div className="text-base text-center md:text-lg opacity-50 space-y-2 md:space-y-4 ">     

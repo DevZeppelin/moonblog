@@ -4,7 +4,7 @@ import Link from "next/link";
 import { ImPencil2, ImBook } from "react-icons/im";
 import { GoRadioTower } from "react-icons/go";
 import { FaBtc } from "react-icons/fa";
-import Logo from "../components/icon/Logo";
+
 
 export default function Home({ blogs }) {
   return (
@@ -94,7 +94,8 @@ export default function Home({ blogs }) {
             </div>
           </div>
           <div className="md:w-1/4 flex flex-auto items-center justify-center align-middle mr-6">
-          <Logo />
+          <img src="logo.png" alt="monkey icon logo moonblog of moonwatcher" width="240" height="240" />
+
             
           </div>
         </div>
@@ -124,7 +125,7 @@ export default function Home({ blogs }) {
             color: #0063bf;
           }
 
-          .monkeyLogo:hover {
+          img:hover {
             transform: rotate(-360deg);
             transition: 1s;
           }
