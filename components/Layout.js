@@ -124,7 +124,7 @@ export default function Layout({ children }) {
         </Link>
         <Link href="/river">
           <a className="mr-6 mt-5 px-3 border-b-2 border-transparent hover:border-red-600">
-            River Plate
+            River
           </a>
         </Link>
       </div>
