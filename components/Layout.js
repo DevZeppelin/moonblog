@@ -150,85 +150,90 @@ export default function Layout({ children }) {
           id="contacto"
           className="flex space-x-5 md:space-x-10 text-2xl md:text-4xl justify-center"
         >
-          <Link
+          <a
             href="https://api.whatsapp.com/send?phone=5492616708100"
             target="_blank"
+            rel="noopener"
           >
             <button
-              aria-label="go to my whatsapp"
-              target="_blank"
-              rel="noopener"
+              aria-label="go to my whatsapp"              
               alt="whatsapp-logo"
             >
               <FaWhatsapp className="hover:text-green-700" />
             </button>
-          </Link>
+          </a>
 
-          <Link href="https://www.instagram.com/moonwatcher.dev/">
+          <a href="https://www.instagram.com/moonwatcher.dev/"
+            target="_blank"
+            rel="noopener">
             <button
               aria-label="go to my instagram"
-              target="_blank"
-              rel="noopener"
+              
               alt="instagram-logo"
             >
               <FaInstagram className="hover:text-yellow-700" />
             </button>
-          </Link>
+          </a>
 
-          <Link href="https://www.twitter.com/moonwatcher73/">
+          <a href="https://www.twitter.com/moonwatcher73/"
+          target="_blank"
+          rel="noopener">
             <button
               aria-label="go to my twitter"
-              target="_blank"
-              rel="noopener"
+              
               alt="twitter-logo"
             >
               <FiTwitter className="hover:text-blue-500" />
             </button>
-          </Link>
+          </a>
 
-          <Link href="https://www.facebook.com/Gini77o">
+          <a href="https://www.facebook.com/Gini77o"
+          target="_blank"
+          rel="noopener">
             <button
               aria-label="go to my fabecook"
-              target="_blank"
-              rel="noopener"
+              
               alt="facebook-logo"
             >
               <FaFacebook className="hover:text-blue-800" />
             </button>
-          </Link>
+          </a>
 
-          <Link href="https://github.com/DevZeppelin">
+          <a href="https://github.com/DevZeppelin"
+          target="_blank"
+          rel="noopener">
             <button
               aria-label="go to my github"
-              target="_blank"
-              rel="noopener"
+              
               alt="github-logo"
             >
               <FaGithub className="hover:text-red-400" />
             </button>
-          </Link>
+          </a>
 
-          <Link href="https://www.linkedin.com/in/gino-pietrobon">
+          <a href="https://www.linkedin.com/in/gino-pietrobon"
+          target="_blank"
+          rel="noopener">
             <button
               aria-label="go to my linked in"
-              target="_blank"
-              rel="noopener"
+              
               alt="linkedin-logo"
             >
               <FaLinkedinIn className="hover:text-yellow-400" />
             </button>
-          </Link>
+          </a>
 
-          <Link href="mailto:gino.b.pietrobon@gmail.com">
+          <a href="mailto:gino.b.pietrobon@gmail.com"
+           target="_blank"
+           rel="noopener">
             <button
               aria-label="send me a mail"
-              target="_blank"
-              rel="noopener"
+             
               alt="gmail-logo"
             >
               <FiMail className="hover:text-red-600" />
             </button>
-          </Link>
+          </a>
         </div>
 
         <div className="mt-10 text-sm max-w-2xl">
