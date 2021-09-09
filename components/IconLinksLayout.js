@@ -34,7 +34,7 @@ export default function IconLinksLayout({
         </div>
 
         <div className="flex">
-          <a className="flex" href="https://dev-zeppelin.vercel.app" target="_blank" rel="noopener">
+          <a className="flex" href="https://devzeppelin.ar" target="_blank" rel="noopener">
             <abbr title="DevZeppelin. Webs 100% perfomance">
               <GiZeppelin className="mr-4 text-3xl cursor-pointer hover:text-secundary" />
             </abbr>
