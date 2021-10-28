@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+    <title>information</title>
+    <link>link noticia</link>
+    <description>Sitio informativo</description>
+    <language>es</language>
+
+<item>
+    <title>El calentamiento global es imparable</title>
+    <description>El planeta está hoy +1ºC más caliente. Lytton, Canadá llegó a 49.6ºC y el pueblo entero se quemó. El pasado invierno Texas se congeló. Viviremos temperaturas extremas en calor y frío. Es imparable. ¿Entonces? </description>
+    <link>https://www.moonblog.ar/blog/autor-freddy-vega-freddier</link>
+</item>
+
+<item>
+    <title>El sistema de gobierno #OpenSource que salvó el mundo</title>
+    <description>Un joven amante de la #tecnología un día propuso un sistema de código abierto que permitía llevar adelante el gobierno de un país de forma "descentralizada" a través de algoritmos y #matemáticas.</description>
+    <link>https://www.moonblog.ar/politica/utopia-dev</link>
+</item>
+
+<item>
+    <title>Generar Riqueza a través de la especialización</title>
+    <description>La industria de hoy demanda talento y los ciudadanos de internet contamos con el superpoder de la información a nuestro alcance. Si realmente lo queremos podemos hacer un curso de cinco horas sobre lo que sea y comenzar a convertirnos “especialistas en algo”.</description>
+    <link>https://www.moonblog.ar/blog/especializacion</link>
+</item>
+<item>
+    <title>Los mercados y la "Verdad"</title>
+    <description>Consejo: Un buen trader sabe leer el mercado. Una vez que nuestro criterio es sólido, esto nos da el poder de interpretar señales y tomar decisiones correctas basándonos en convicciones. SIEMPRE invierte en conocimiento, invierte en tu mente y en tu cerebro. Esa es la inversión con mejor retorno. Otro es ver siempre lo que hacen las grandes corporaciones y organizaciones con respecto al mundo Cristo, ver hacia dónde van ellos nos ayudará a entender mejor el panorama. </description>
+    <link>https://www.moonblog.ar/blog/mercado-y-verdad</link>
+</item>
+
+</channel>
+</rss>
+    
